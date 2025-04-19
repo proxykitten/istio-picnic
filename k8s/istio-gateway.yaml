@@ -1,14 +1,18 @@
-apiVersion: networking.istio.io/v1alpha3
-kind: Gateway
+apiVersion: v1
+kind: Service
 metadata:
-  name: microservices-gateway
+  name: istio-ingressgateway
+  namespace: istio-system
 spec:
+  type: NodePort
   selector:
     istio: ingressgateway
-  servers:
-  - port:
-      number: 80
-      name: http
-      protocol: HTTP
-    hosts:
-    - "*"
+  ports:
+  - name: http2
+    port: 80
+    targetPort: 8080
+    nodePort: 30080
+  - name: https
+    port: 443
+    targetPort: 8443
+    nodePort: 30443
