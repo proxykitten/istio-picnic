@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: user-service
-        image: docker pull proxykitten/user-service:v1
+        image: proxykitten/user-service:v1
         ports:
         - containerPort: 3000
         env:

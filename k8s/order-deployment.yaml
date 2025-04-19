@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: order-service
-        image: docker pull proxykitten/order-service:v1
+        image: proxykitten/order-service:v1
         ports:
         - containerPort: 3000
         env:
