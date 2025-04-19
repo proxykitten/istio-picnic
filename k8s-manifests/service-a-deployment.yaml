@@ -13,6 +13,8 @@ spec:
     metadata:
       labels:
         app: service-a
+      annotations:
+        sidecar.istio.io/initContainer: "false"
     spec:
       containers:
       - name: service-a
