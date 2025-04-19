@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: service-a
-        image: proxykitten/service-a:latest  # build & load into cluster
+        image: proxykitten/service-a:latest
         env:
         - name: DB_HOST
           value: "192.168.14.148"
