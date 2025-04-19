@@ -1,3 +1,3 @@
-# Simple Microservices with Kubernetes & Istio
+# Sample Microservices with Kubernetes & Istio
 
-This demo showcases two Node.js microservices (user, order) using PostgreSQL, deployed with Kubernetes and exposed via Istio Ingress Gateway. Explore the code and manifests!
+It should be a micro services but the pods failed to init for some reason. Froget it.
